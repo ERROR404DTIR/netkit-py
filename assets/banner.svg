@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" role="img" aria-label="Netkit animation">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062a22"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/>
+
+  <text x="400" y="52" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">Netkit</text>
+  <text x="400" y="76" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8">dns · tcping · port scan · http/ssl check</text>
+
+  <!-- network nodes -->
+  <g stroke="#34d399" stroke-width="1.5" opacity="0.5">
+    <line x1="150" y1="140" x2="300" y2="110"/>
+    <line x1="300" y1="110" x2="450" y2="150"/>
+    <line x1="450" y1="150" x2="600" y2="115"/>
+    <line x1="300" y1="110" x2="400" y2="170"/>
+    <line x1="400" y1="170" x2="600" y2="115"/>
+  </g>
+
+  <g fill="#34d399">
+    <circle cx="150" cy="140" r="7"/>
+    <circle cx="300" cy="110" r="7"/>
+    <circle cx="450" cy="150" r="7"/>
+    <circle cx="600" cy="115" r="7"/>
+    <circle cx="400" cy="170" r="7"/>
+  </g>
+
+  <!-- pulsing rings on nodes -->
+  <g fill="none" stroke="#34d399" stroke-width="2">
+    <circle cx="150" cy="140" r="7">
+      <animate attributeName="r" values="7;22" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="150" r="7">
+      <animate attributeName="r" values="7;22" dur="2s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="115" r="7">
+      <animate attributeName="r" values="7;22" dur="2s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- packet travelling along the path -->
+  <circle r="5" fill="#fbbf24">
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M150,140 L300,110 L450,150 L600,115"/>
+  </circle>
+</svg>
