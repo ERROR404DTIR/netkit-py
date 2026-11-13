@@ -1,8 +1,10 @@
 <div align="center">
 
+<p align="center"><img src="assets/readme-banner.svg" alt="Animated Netkit network banner" width="100%"></p>
+
 <img src="assets/banner.svg" alt="Netkit" width="100%"/>
 
-# 🌐 netkit-py
+#  netkit-py
 
 **جعبه‌ابزار شبکه در یک فایل پایتون — بدون `pip install`**
 
@@ -14,7 +16,7 @@
 
 ---
 
-## ✨ قابلیت‌ها
+##  قابلیت‌ها
 
 | دستور | کاربرد |
 |---|---|
@@ -26,7 +28,7 @@
 
 فقط کتابخانه‌های استاندارد پایتون استفاده شده؛ هیچ چیزی نصب نمی‌شود.
 
-## 🚀 اجرا
+##  اجرا
 
 ```bash
 git clone https://github.com/ERROR404DTIR/netkit-py.git
@@ -44,7 +46,7 @@ python netkit.py http https://example.com
 
 راهنمای هر دستور: `python netkit.py <command> -h`
 
-## 📌 نمونه خروجی
+##  نمونه خروجی
 
 ```text
 $ python netkit.py tcping 127.0.0.1 8765 -c 3
@@ -64,16 +66,16 @@ $ python netkit.py http https://example.com
 گواهی SSL    : اعتبار تا 2027-01-10 (59 روز مانده)
 ```
 
-## ⚙️ گزینه‌های مفید
+## ️ گزینه‌های مفید
 
 - `--timeout` — زمان انتظار هر اتصال (ثانیه)
 - `ports --threads 500` — افزایش سرعت اسکن
 - `ports -p 1-65535` — اسکن همه‌ی پورت‌ها
 
-## ⚠️ مسئولیت استفاده
+## ️ مسئولیت استفاده
 
 اسکن پورت را فقط روی سرورها و شبکه‌هایی انجام دهید که مالک آن‌ها هستید یا اجازه‌ی کتبی دارید.
 
-## 📄 لایسنس
+##  لایسنس
 
 MIT
